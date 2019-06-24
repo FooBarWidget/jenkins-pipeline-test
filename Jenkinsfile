@@ -1,7 +1,7 @@
 @Library('jenkins-library-test@master') _
 
-defineCookbookPipeline.call(
+cookbookPipeline.define(
 	prepare: {
-		echo "bumped version = ${defineCookbookPipeline.BUMPED_VERSION}"
+		echo "bumped version = ${cookbookPipeline.BUMPED_VERSION}"
 	}
 )
